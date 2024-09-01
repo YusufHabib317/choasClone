@@ -1,0 +1,126 @@
+.slideParent {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.imageBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.indicator {
+  width: 15px;
+  height: 10px;
+  transition: width 250ms ease;
+  z-index: 5;
+  background-color: white;
+  margin: 0 3px;
+
+  &[data-active] {
+    width: 25px;
+    background-color: var(--mantine-color-primary-2);
+  }
+}
+.control {
+  display: none;
+}
+
+.title {
+  font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 22px;
+  }
+}
+.btn {
+  background-color: var(--mantine-color-primary-1);
+  color: white;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    border 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnHover:hover {
+  background-color: black;
+  border: 2px solid var(--mantine-color-primary-2);
+}
+
+.iconBox {
+  --icon-size: 60px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mantine-color-primary-1);
+  flex-shrink: 0;
+}
+
+@media (max-width: 64em) {
+  .iconBox {
+    --icon-size: 50px;
+  }
+}
+
+@media (max-width: 48em) {
+  .iconBox {
+    --icon-size: 40px;
+  }
+}
+
+.cardWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardWrapper::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardWrapper:hover::before {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

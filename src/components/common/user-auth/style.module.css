@@ -1,0 +1,7 @@
+.auth {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.auth:hover {
+  color: var(--mantine-color-primary-1);
+}

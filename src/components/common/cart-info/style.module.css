@@ -1,0 +1,7 @@
+.userCurrency {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.userCurrency:hover {
+  color: var(--mantine-color-primary-1);
+}
