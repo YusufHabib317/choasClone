@@ -1,7 +1,8 @@
+'use client';
+
 import { heroSlide } from '@/data';
 import { Carousel } from '@mantine/carousel';
 import { HeroSlide } from './hero-slide';
-import { Box } from '@mantine/core';
 import classes from './styles.module.css';
 
 function Hero() {

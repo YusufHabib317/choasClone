@@ -5,7 +5,7 @@ import classes from './style.module.css';
 
 function MembershipTiers() {
   return (
-    <Box mb={50} pos={'relative'} c={'white'} p={40}>
+    <Box mb={40} pos={'relative'} c={'white'} p={20}>
       <Box className={classes.bg} />
 
       <Box className={classes.bgLayer} />

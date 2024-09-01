@@ -15,10 +15,7 @@ function Layout(props: { children: React.ReactNode }) {
       </AppShell.Header>
 
       <AppShell.Main mih="100vh">
-        <Hero />
-        <HeroCards />
         <Container size="xl">{children}</Container>
-        <MembershipTiers />
       </AppShell.Main>
     </AppShell>
   );

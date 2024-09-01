@@ -1,7 +1,38 @@
-import { Burger, Container, Drawer, Flex, ScrollArea, Box, Avatar } from '@mantine/core';
+import { Burger, Container, Drawer, Flex, ScrollArea, Box, Avatar, Text } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
-import { IconBasket } from '@tabler/icons-react';
+import { IconBasket, IconChevronRight } from '@tabler/icons-react';
 import { CartInfo, Logo, SearchBar, UserAuth } from '@/components';
+import { useRouter } from 'next/navigation';
+
+function CategoryLink() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/categories');
+  };
+
+  return (
+    <Flex
+      mt={15}
+      c={'white'}
+      align={'center'}
+      px={20}
+      style={{ cursor: 'pointer' }}
+      component="a"
+      onClick={handleClick}
+    >
+      <Text>Categories</Text>
+      <IconChevronRight
+        size={20}
+        stroke={3}
+        style={{
+          color: 'var(--mantine-color-primary-1)',
+          marginTop: 2,
+        }}
+      />
+    </Flex>
+  );
+}
 
 function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
@@ -32,52 +63,61 @@ function Header() {
 
 function renderLargeScreenLayout() {
   return (
-    <Flex justify="space-between" align="center" px={15} h={70}>
-      <Logo />
-      <Box w={'50%'}>
-        <SearchBar />
-      </Box>
-      <UserAuth />
-      <CartInfo />
-    </Flex>
+    <Box>
+      <Flex justify="space-between" align="center" px={15} h={70}>
+        <Logo />
+        <Box w={'50%'}>
+          <SearchBar />
+        </Box>
+        <UserAuth />
+        <CartInfo />
+      </Flex>
+      <CategoryLink />
+    </Box>
   );
 }
 
 function renderMediumScreenLayout(drawerOpened: boolean, toggleDrawer: () => void) {
   return (
-    <Flex justify="space-between" align="center" px={15} h={80}>
-      <Logo />
-      <Box w={'50%'}>
-        <SearchBar />
-      </Box>
-      <Box>
-        <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
-      </Box>
-      <Avatar bg="primary.1" color="cyan" radius="xl">
-        <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
-      </Avatar>
-    </Flex>
+    <Box>
+      <Flex justify="space-between" align="center" px={15} h={80}>
+        <Logo />
+        <Box w={'50%'}>
+          <SearchBar />
+        </Box>
+        <Box>
+          <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
+        </Box>
+        <Avatar bg="primary.1" color="cyan" radius="xl">
+          <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
+        </Avatar>
+      </Flex>
+      <CategoryLink />
+    </Box>
   );
 }
 
 function renderSmallScreenLayout(drawerOpened: boolean, toggleDrawer: () => void) {
   return (
-    <Flex direction="column" justify="space-between" align="center" gap={15}>
-      <Flex justify="space-between" w="100%" align="center">
-        <Logo />
-        <Flex gap={10} align="center">
-          <Box>
-            <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
-          </Box>
-          <Avatar bg="primary.1" color="cyan" radius="xl">
-            <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
-          </Avatar>
+    <Box>
+      <Flex direction="column" justify="space-between" align="center" gap={15}>
+        <Flex justify="space-between" w="100%" align="center">
+          <Logo />
+          <Flex gap={10} align="center">
+            <Box>
+              <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
+            </Box>
+            <Avatar bg="primary.1" color="cyan" radius="xl">
+              <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
+            </Avatar>
+          </Flex>
         </Flex>
+        <Box w="100%">
+          <SearchBar />
+        </Box>
       </Flex>
-      <Box w="100%">
-        <SearchBar />
-      </Box>
-    </Flex>
+      <CategoryLink />
+    </Box>
   );
 }
 

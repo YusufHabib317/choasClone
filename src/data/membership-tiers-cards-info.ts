@@ -3,6 +3,7 @@ type MembershipType = {
   points: string;
   cashback: string;
   image: string;
+  imageOnHover?: string;
 };
 
 const membershipData: MembershipType[] = [
@@ -23,6 +24,7 @@ const membershipData: MembershipType[] = [
     points: '100,000',
     cashback: '3% Monthly cashback',
     image: '/member-ship/gold.png',
+    imageOnHover: '/member-ship/pikachu.png',
   },
 ];
 
