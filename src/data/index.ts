@@ -5,3 +5,4 @@ export { homeCard } from './home-card';
 export { productsInfo } from './products-info';
 export type { Currency } from './available-currencies';
 export type { HeroSlideTypes } from './hero-slides';
+export type { ProductType } from './products-info';

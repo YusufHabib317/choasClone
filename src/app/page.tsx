@@ -1,9 +1,13 @@
-import { Layout } from '@/components';
+import { Layout, Products } from '@/components';
+import { productsInfo } from '@/data';
 
 export default function Home() {
   return (
     <>
-      <Layout>v</Layout>
+      <Layout>
+        <Products title="Recommended for you" products={productsInfo} />
+        <Products title="Featured Board Games" products={productsInfo} />
+      </Layout>
     </>
   );
 }

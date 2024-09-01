@@ -1,3 +1,3 @@
 export { Layout } from './layout';
-export { Logo, SearchBar, UserAuth, CartInfo } from './common';
-export { Hero, HeroCards } from './landing-page';
+export { Logo, SearchBar, UserAuth, CartInfo, Product } from './common';
+export { Hero, HeroCards, Products } from './landing-page';
