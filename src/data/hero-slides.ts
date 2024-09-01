@@ -16,7 +16,7 @@ const heroSlide: HeroSlideTypes[] = [
   },
   {
     imageBackground: '/slides/slide2/bg.webp',
-    leftImage: '/slides/slide2/left.png',
+    leftImage: '/slides/slide2/left.webp',
     rightImage: '/slides/slide2/right.webp',
     title: 'An Adventure to Awaken the Power Within!',
     buttonText: 'New Stellar Tera Pokémon ex await!',
@@ -24,7 +24,7 @@ const heroSlide: HeroSlideTypes[] = [
   {
     imageBackground: '/slides/slide3/bg.webp',
     leftImage: '/slides/slide3/left.png',
-    rightImage: '/slides/slide3/right.webp',
+    rightImage: 'slides/slide3/right.png',
     title: 'An Adventure to Awaken the Power Within!',
     buttonText: 'Dare to enter Duskmourn!',
   },
