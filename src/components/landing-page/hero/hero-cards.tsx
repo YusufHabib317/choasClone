@@ -1,6 +1,6 @@
 'use client';
 
-import { Flex, Text, Image, Box } from '@mantine/core';
+import { Flex, Text, Image, Box, Container } from '@mantine/core';
 import classes from './styles.module.css';
 import { homeCard } from '@/data';
 import { useMediaQuery } from '@mantine/hooks';
@@ -55,27 +55,29 @@ function HeroCards() {
       }}
       mb={20}
     >
-      <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" align={'center'}>
-        <Flex direction={'column'} gap={5}>
-          {infoSection.map((item, index) => (
-            <Flex key={index} align="center" gap="md" p={10}>
-              <Box bg={'primary.1'} className={classes.iconBox}>
-                {getIconComponent(item.icon, isLargeScreen!)}
-              </Box>
-              <Text c="white" fw={'bold'} fz={{ base: 14, sm: 16, md: 18, lg: 20 }}>
-                {item.desc}
-              </Text>
-            </Flex>
-          ))}
-        </Flex>
-        <Flex>
-          <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" justify="center" align="center" wrap="wrap">
-            {homeCard.map((card, index) => (
-              <Card key={index} imageUrl={card.imageUrl} name={card.name} isLargeScreen={isLargeScreen} />
+      <Container size="xl">
+        <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" align={'center'}>
+          <Flex direction={'column'} gap={5}>
+            {infoSection.map((item, index) => (
+              <Flex key={index} align="center" gap="md" p={10}>
+                <Box bg={'primary.1'} className={classes.iconBox}>
+                  {getIconComponent(item.icon, isLargeScreen!)}
+                </Box>
+                <Text c="white" fw={'bold'} fz={{ base: 14, sm: 16, md: 18, lg: 20 }}>
+                  {item.desc}
+                </Text>
+              </Flex>
             ))}
           </Flex>
+          <Flex>
+            <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" justify="center" align="center" wrap="wrap">
+              {homeCard.map((card, index) => (
+                <Card key={index} imageUrl={card.imageUrl} name={card.name} isLargeScreen={isLargeScreen} />
+              ))}
+            </Flex>
+          </Flex>
         </Flex>
-      </Flex>
+      </Container>
     </Box>
   );
 }

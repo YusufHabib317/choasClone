@@ -40,6 +40,7 @@ function Card({ imageUrl, name, isLargeScreen }: CardProps) {
 
   return (
     <Flex
+      h={{ base: 220, xs: 240, sm: 280 }}
       className={classes.cardWrapper}
       justify={'space-between'}
       align={'center'}
@@ -54,7 +55,7 @@ function Card({ imageUrl, name, isLargeScreen }: CardProps) {
         ...tiltStyle,
       }}
     >
-      <Image src={imageUrl} alt={name} h={{ base: '280px' }} style={{ width: '100%' }} />
+      <Image src={imageUrl} alt={name} h={{ base: '170px', xs: '190px' }} style={{ width: '100%' }} />
       <Flex p={8} c={'white'} gap={5} align={'center'}>
         <Text fz={{ base: 12, sm: 18, md: 18 }} fw="bold">
           {name}
