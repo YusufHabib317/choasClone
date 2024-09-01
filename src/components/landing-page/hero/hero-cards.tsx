@@ -48,7 +48,8 @@ function HeroCards() {
     <Box
       style={{
         clipPath: isLargeScreen ? 'polygon(0 0, 100% 0, 100% 85%, 0% 100%)' : 'none',
-        backgroundImage: 'url(https://cdn.chaoscards.co.uk/public/images/bgs/grey_arrow.png)',
+        // backgroundImage: 'url(https://cdn.chaoscards.co.uk/public/images/bgs/grey_arrow.png)',
+        backgroundImage: 'url(/grey_arrow.webp)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

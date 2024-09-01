@@ -6,12 +6,11 @@ function Logo() {
 
   return (
     <>
-      <>
-        <Center>
-          <Image src="https://cdn.chaoscards.co.uk/public/images/logo.png" style={{ width: matches ? 150 : 250 }} />
-        </Center>
-      </>
+      <Center>
+        <Image src="/logo/logo.png" style={{ width: matches ? 150 : 250 }} />
+      </Center>
     </>
   );
 }
+
 export { Logo };
