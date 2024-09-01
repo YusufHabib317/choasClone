@@ -1,4 +1,4 @@
-import { HeroCards, Layout } from '@/components';
+import { Layout } from '@/components';
 
 export default function Home() {
   return (

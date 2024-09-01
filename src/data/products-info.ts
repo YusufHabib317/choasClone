@@ -6,7 +6,7 @@ const productsInfo = [
     discount: '11%',
     savings: '£1.74',
     availability: 'In Stock',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Released 13/09/2024',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_261535_s.png?v=-62169983925',
   },
   {
@@ -16,8 +16,7 @@ const productsInfo = [
     discount: '22%',
     savings: '£0.99',
     availability: 'Pre-order',
-    release_date: '13/09/2024',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Released 13/09/2024',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_261540_s.png?v=-62169983925',
   },
   {
@@ -27,8 +26,7 @@ const productsInfo = [
     discount: '23%',
     savings: '£5.04',
     availability: 'Pre-order',
-    release_date: '06/09/2024',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Released 13/09/2024',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_263116_s.png?v=-62169983925',
   },
   {
@@ -40,7 +38,7 @@ const productsInfo = [
     rating: '4.5',
     reviews: 17,
     availability: 'In Stock',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Only 1 left',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_263116_s.png?v=-62169983925',
   },
   {
@@ -52,7 +50,7 @@ const productsInfo = [
     rating: '4.0',
     reviews: 2,
     availability: 'In Stock',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Only 1 left',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_164838_s.png?v=-62169983925',
   },
   {
@@ -62,7 +60,7 @@ const productsInfo = [
     discount: '34%',
     savings: '£1.52',
     availability: 'In Stock',
-    button_text: 'ADD TO BASKET',
+    moreInfo: 'Only 1 left',
     image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_164838_s.png?v=-62169983925',
   },
 ];
