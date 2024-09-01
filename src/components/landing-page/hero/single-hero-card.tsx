@@ -44,7 +44,6 @@ function Card({ imageUrl, name, isLargeScreen }: CardProps) {
       justify={'space-between'}
       align={'center'}
       direction={'column'}
-      h={'270px'}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
@@ -55,9 +54,9 @@ function Card({ imageUrl, name, isLargeScreen }: CardProps) {
         ...tiltStyle,
       }}
     >
-      <Image src={imageUrl} alt={name} h={'280px'} style={{ width: '100%' }} />
+      <Image src={imageUrl} alt={name} h={{ base: '280px' }} style={{ width: '100%' }} />
       <Flex p={8} c={'white'} gap={5} align={'center'}>
-        <Text fz={{ base: 10, sm: 14, md: 16 }} fw="bold">
+        <Text fz={{ base: 12, sm: 18, md: 18 }} fw="bold">
           {name}
         </Text>
         <IconArrowRight stroke={2} style={{ color: 'var(--mantine-color-primary-1)' }} />

@@ -2,7 +2,6 @@
 
 import { AppShell, Container } from '@mantine/core';
 import { Header, InfoBar } from './header';
-import { Hero, HeroCards, MembershipTiers } from '@/components';
 
 function Layout(props: { children: React.ReactNode }) {
   const { children } = props;
