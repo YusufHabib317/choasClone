@@ -7,6 +7,7 @@ const productsInfo = [
     savings: '£1.74',
     availability: 'In Stock',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_261535_s.png?v=-62169983925',
   },
   {
     product_name: 'Digimon Card Game - Digimon Liberator Booster Pack EX07 (12 Cards)',
@@ -17,6 +18,7 @@ const productsInfo = [
     availability: 'Pre-order',
     release_date: '13/09/2024',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_261540_s.png?v=-62169983925',
   },
   {
     product_name: 'Pokemon Paradox Destinies Tin - Gouging Fire EX',
@@ -27,6 +29,7 @@ const productsInfo = [
     availability: 'Pre-order',
     release_date: '06/09/2024',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_263116_s.png?v=-62169983925',
   },
   {
     product_name: 'Pokemon Booster Pack (10 Cards) - Sun and Moon Crimson Invasion',
@@ -38,6 +41,7 @@ const productsInfo = [
     reviews: 17,
     availability: 'In Stock',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_263116_s.png?v=-62169983925',
   },
   {
     product_name: 'Pokemon Scarlet & Violet Twilight Masquerade: Booster Pack (10 Cards)',
@@ -49,6 +53,7 @@ const productsInfo = [
     reviews: 2,
     availability: 'In Stock',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_164838_s.png?v=-62169983925',
   },
   {
     product_name: 'Fenrir Games Standard Size (3" by 4") Toploaders (25 count) - Grey Border',
@@ -58,6 +63,7 @@ const productsInfo = [
     savings: '£1.52',
     availability: 'In Stock',
     button_text: 'ADD TO BASKET',
+    image: 'https://cdn.chaoscards.co.uk/uploads/prod_img/2_164838_s.png?v=-62169983925',
   },
 ];
 

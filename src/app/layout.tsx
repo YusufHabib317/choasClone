@@ -4,8 +4,8 @@ import { ColorSchemeScript, MantineProvider, createTheme } from '@mantine/core';
 import '@mantine/carousel/styles.css';
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully',
+  title: 'Choas Clone | ',
+  description: '',
 };
 
 const theme = createTheme({

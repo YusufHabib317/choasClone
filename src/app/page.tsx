@@ -1,8 +1,6 @@
 import { HeroCards, Layout } from '@/components';
 
-export default function Home(props: { children: React.ReactNode }) {
-  const { children } = props;
-
+export default function Home() {
   return (
     <>
       <Layout>v</Layout>
