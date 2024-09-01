@@ -1,5 +1,3 @@
-export default function page(props: { children: React.ReactNode }) {
-  const { children } = props;
-
+export default function page() {
   return <></>;
 }
