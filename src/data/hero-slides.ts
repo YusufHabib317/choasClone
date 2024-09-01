@@ -8,23 +8,23 @@ interface HeroSlideTypes {
 
 const heroSlide: HeroSlideTypes[] = [
   {
-    imageBackground: 'https://cdn.chaoscards.co.uk/uploads/home_header/3_184_h.jpg?v=1724408342',
-    leftImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/9_180_s.png?v=1724408342',
-    rightImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/8_180_s.png?v=1724408342',
+    imageBackground: '/slides/slide1/bg.webp',
+    leftImage: '/slides/slide1/left.png',
+    rightImage: '/slides/slide1/right.webp',
     title: 'Celebrate victory over Ursula in the latest Disney Lorcana release!',
     buttonText: 'A new mystery begins!',
   },
   {
-    imageBackground: 'https://cdn.chaoscards.co.uk/uploads/home_header/3_180_s.jpg?v=1724408342',
-    leftImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/9_184_s.png?v=1724408342',
-    rightImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/8_184_s.png?v=1724408342',
+    imageBackground: '/slides/slide2/bg.webp',
+    leftImage: '/slides/slide2/left.png',
+    rightImage: '/slides/slide2/right.webp',
     title: 'An Adventure to Awaken the Power Within!',
     buttonText: 'New Stellar Tera Pokémon ex await!',
   },
   {
-    imageBackground: 'https://cdn.chaoscards.co.uk/uploads/home_header/3_183_h.jpg?v=1724408342',
-    leftImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/9_183_s.png?v=1724408342',
-    rightImage: 'https://cdn.chaoscards.co.uk/uploads/home_header/8_183_s.png?v=1724408342',
+    imageBackground: '/slides/slide3/bg.webp',
+    leftImage: '/slides/slide3/left.png',
+    rightImage: '/slides/slide3/right.webp',
     title: 'An Adventure to Awaken the Power Within!',
     buttonText: 'Dare to enter Duskmourn!',
   },
