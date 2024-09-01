@@ -49,8 +49,7 @@ function HeroCards() {
       style={{
         clipPath: isLargeScreen ? 'polygon(0 0, 100% 0, 100% 85%, 0% 100%)' : 'none',
         backgroundImage: 'url(/grey_arrow.webp)',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
         padding: '80px',
       }}

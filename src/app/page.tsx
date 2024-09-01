@@ -1,4 +1,4 @@
-import { Layout, Products } from '@/components';
+import { Layout, Products, MembershipTiers } from '@/components';
 import { productsInfo } from '@/data';
 
 export default function Home() {
