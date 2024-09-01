@@ -1,18 +1,18 @@
 const homeCard = [
   {
-    imageUrl: 'https://cdn.chaoscards.co.uk/uploads/brand/10_5_h.png?v=1701045836',
+    imageUrl: '/hero-cards/1.webp',
     name: 'Yu-Gi-Oh!',
   },
   {
-    imageUrl: 'https://cdn.chaoscards.co.uk/uploads/brand/10_12_h.png?v=1701650768',
+    imageUrl: '/hero-cards/2.png',
     name: 'Pokemon',
   },
   {
-    imageUrl: 'https://cdn.chaoscards.co.uk/uploads/brand/10_13_h.png?v=1701045860',
+    imageUrl: '/hero-cards/3.webp',
     name: 'Magic the Gathering',
   },
   {
-    imageUrl: 'https://cdn.chaoscards.co.uk/uploads/brand/10_421_h.png?v=1701045875',
+    imageUrl: '/hero-cards/4.webp',
     name: 'Games Workshop',
   },
 ];
