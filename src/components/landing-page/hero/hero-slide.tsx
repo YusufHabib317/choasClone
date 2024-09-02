@@ -29,7 +29,8 @@ function HeroSlide({ imageBackground, leftImage, rightImage, title, buttonText }
               p={5}
               fz={{ base: 12, xs: 12, sm: 16 }}
               className={`${classes.btn} ${classes.btnHover}`}
-              w={'100%'}
+              w={{ base: '60%', xs: '50%', md: '70%', lg: '60%' }}
+              mx={'auto'}
             >
               {buttonText}
             </Box>
