@@ -52,8 +52,7 @@ function HeroCards() {
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
       }}
-      pb={20}
-      p={{ base: 10, xs: 80 }}
+      p={{ base: 10, xs: 85 }}
     >
       <Container size="xl">
         <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" align={'center'}>
