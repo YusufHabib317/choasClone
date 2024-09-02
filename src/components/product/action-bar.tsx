@@ -12,7 +12,7 @@ function ActionBar() {
     return (
       <Flex direction="column" gap={15} mb={40}>
         <Flex mb={10} justify={'space-between'} align={'center'}>
-          <Text>Quantity</Text>
+          <Text fz={{ base: 13, xs: 16 }}>Quantity</Text>
           <input
             id="quantity"
             value={1}

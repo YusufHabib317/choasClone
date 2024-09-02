@@ -16,7 +16,7 @@ function Product(props: ProductType) {
   }, [id, router]);
 
   return (
-    <Box className={classes.productCard} h={{ base: 410 }}>
+    <Box className={classes.productCard} h={{ base: 410 }} onClick={handleQuickLookClick}>
       <Flex direction="column" h="100%">
         <Box px={15} style={{ flexGrow: 1 }}>
           <Box pos={'relative'} mt={15}>
