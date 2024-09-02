@@ -18,16 +18,27 @@ function MembershipTier(props: MembershipType) {
           </Text>
         </Flex>
         <Center my={15}>
-          <Image src={image} w={150} />
+          <Image src={image} w={{ base: 120, xs: 150 }} />
         </Center>
-        <Stack ta={'center'} fz={{ base: 13, xs: 15 }}>
-          <Text fw={'bold'}>{cashback}% Monthly cashback</Text>
-          <Text fw={'bold'}>Exclusive Discount code every </Text>
+        <Stack ta={'center'}>
+          <Text fw={'bold'} fz={{ base: 13, xs: 16 }}>
+            {cashback}% Monthly cashback
+          </Text>
+          <Text fw={'bold'} fz={{ base: 13, xs: 16 }}>
+            Exclusive Discount code every{' '}
+          </Text>
         </Stack>
       </Box>
       <Box mt={10}>
         <Divider />
-        <Flex p={15} justify={'center'} align={'center'} component="a" className={classes.BecomeMemberBtn}>
+        <Flex
+          p={15}
+          justify={'center'}
+          align={'center'}
+          component="a"
+          className={classes.BecomeMemberBtn}
+          fz={{ base: 13, xs: 18 }}
+        >
           BECOME A MEMBER
           <IconChevronRight
             size={20}

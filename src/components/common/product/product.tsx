@@ -16,7 +16,7 @@ function Product(props: ProductType) {
   }, [id, router]);
 
   return (
-    <Box className={classes.productCard} h={400}>
+    <Box className={classes.productCard} h={{ base: 410 }}>
       <Flex direction="column" h="100%">
         <Box px={15} style={{ flexGrow: 1 }}>
           <Box pos={'relative'} mt={15}>
@@ -36,7 +36,7 @@ function Product(props: ProductType) {
 
           <Divider my={5} />
 
-          <Text h={60} fz={{ base: 12, xs: 13 }}>
+          <Text h={60} fz={{ base: 10, xs: 13 }}>
             {productName}
           </Text>
 
@@ -64,7 +64,7 @@ function Product(props: ProductType) {
                 </Text>
               </Text>
             </Box>
-            <Text c={'red.6'} mt={5}>
+            <Text c={'red.6'} mt={{ base: 20, xs: 10 }} fz={{ base: 12, xs: 14 }}>
               {moreInfo}
             </Text>
           </Box>

@@ -1,3 +1,5 @@
+import { Accordion, Box, Center, Flex, Tabs, Text } from '@mantine/core';
+
 type ProductType = {
   id: number;
   productName: string;

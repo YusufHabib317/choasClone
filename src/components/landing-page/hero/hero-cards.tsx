@@ -51,9 +51,9 @@ function HeroCards() {
         backgroundImage: 'url(/grey_arrow.webp)',
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
-        padding: '80px',
       }}
-      mb={20}
+      pb={20}
+      p={{ base: 10, xs: 80 }}
     >
       <Container size="xl">
         <Flex direction={isLargeScreen ? 'row' : 'column'} gap="lg" align={'center'}>

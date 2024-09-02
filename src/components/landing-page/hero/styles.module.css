@@ -124,34 +124,3 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-/* 
-@media (max-width: 240px) {
-  .cardWrapper {
-    height: 160px !important;
-  }
-}
-@media (min-width: 300px) and (max-width: 330px) {
-  .cardWrapper {
-    height: 200px !important;
-  }
-}
-@media (min-width: 331px) and (max-width: 330px) {
-  .cardWrapper {
-    height: 210px !important;
-  }
-}
-@media (min-width: 330px) and (max-width: 765px) {
-  .cardWrapper {
-    height: 400px !important;
-  }
-}
-@media (min-width: 765px) {
-  .cardWrapper {
-    height: 350px !important;
-  }
-}
-@media (min-width: 115px) {
-  .cardWrapper {
-    height: 280px !important;
-  }
-} */

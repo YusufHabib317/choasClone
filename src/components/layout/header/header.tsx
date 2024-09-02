@@ -13,7 +13,7 @@ function CategoryLink() {
 
   return (
     <Flex
-      mt={15}
+      mt={10}
       c={'white'}
       align={'center'}
       px={20}
@@ -21,7 +21,7 @@ function CategoryLink() {
       component="a"
       onClick={handleClick}
     >
-      <Text>Categories</Text>
+      <Text fz={{ base: 12, xs: 14, sm: 16 }}>Categories</Text>
       <IconChevronRight
         size={20}
         stroke={3}
@@ -88,8 +88,8 @@ function renderMediumScreenLayout(drawerOpened: boolean, toggleDrawer: () => voi
         <Box>
           <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
         </Box>
-        <Avatar bg="primary.1" color="cyan" radius="xl">
-          <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
+        <Avatar bg="primary.1" color="cyan" radius="xl" size={40}>
+          <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" size={25} />
         </Avatar>
       </Flex>
       <CategoryLink />
@@ -105,10 +105,10 @@ function renderSmallScreenLayout(drawerOpened: boolean, toggleDrawer: () => void
           <Logo />
           <Flex gap={10} align="center">
             <Box>
-              <IconBasket color="white" stroke={3} style={{ marginTop: 5 }} />
+              <IconBasket size={20} color="white" stroke={3} style={{ marginTop: 5 }} />
             </Box>
-            <Avatar bg="primary.1" color="cyan" radius="xl">
-              <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" />
+            <Avatar bg="primary.1" color="cyan" radius="xl" size={25}>
+              <Burger opened={drawerOpened} onClick={toggleDrawer} color="white" size={15} />
             </Avatar>
           </Flex>
         </Flex>

@@ -27,8 +27,8 @@ function SearchBar() {
         <Menu trigger="hover">
           <Menu.Target>
             <Flex justify={'space-between'} align={'center'} h={'100%'}>
-              <Box fz={'sm'}>{selectedProduct}</Box>
-              <IconChevronDown size={18} style={{ marginTop: 5 }} />
+              <Box fz={{ base: 11, xs: 13, sm: 16 }}>{selectedProduct}</Box>
+              <IconChevronDown size={18} style={{ marginTop: 2 }} />
             </Flex>
           </Menu.Target>
           <Menu.Dropdown>
@@ -54,6 +54,7 @@ function SearchBar() {
             w={30}
             h={30}
             style={{ borderRadius: '4px' }}
+            visibleFrom="xs"
           >
             <IconSearch color="white" style={{ fontWeight: 'bold' }} size={16} stroke={3} />
           </Flex>

@@ -1,0 +1,130 @@
+.infoParent {
+  margin-top: 164px;
+  padding-bottom: 7px;
+}
+
+@media (max-width: 1026px) {
+  .infoParent {
+    margin-top: 174px;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoParent {
+    margin-top: 163px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.fadeEnter {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fadeExit {
+  animation: fadeOut 0.5s forwards;
+}
+
+.infoParent {
+  overflow: hidden;
+}
+.btn {
+  background-color: var(--mantine-color-primary-1);
+  color: white;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    border 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnHover:hover {
+  background-color: black;
+  border: 2px solid var(--mantine-color-primary-2);
+}
+.form {
+  border: 1px solid #dfdfdf;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.productImageWrapper {
+  background-image: url('/grey_arrow.webp');
+  background-repeat: repeat;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: inline-block;
+  letter-spacing: -0.5px;
+  word-break: break-word;
+  font-weight: bold;
+}
+.btnAddWishListHover:hover {
+  transition: all 0.2s ease;
+}
+.btnAddWishListHover:hover {
+  color: var(--mantine-color-primary-1);
+}
+/*  */
+
+.tab {
+  border: 1px solid #dfdfdf;
+  border-bottom-color: transparent;
+  padding: 15px 24px;
+  background: white;
+  transition: all 0.2s ease;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab:hover {
+  color: var(--mantine-color-primary-1);
+}
+.tabsButtonActive {
+  background-color: black;
+  color: white;
+}
+
+.tabPanel {
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container > div {
+  flex: 1;
+  margin-right: 20px;
+}

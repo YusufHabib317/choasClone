@@ -29,8 +29,8 @@ function Products(props: ProductsPropsType) {
   }
 
   return (
-    <Box my={30}>
-      <Title order={3} fz={{ base: 12, xs: 14, sm: 16, md: 30 }}>
+    <Box py={25}>
+      <Title order={3} fz={{ base: 14, xs: 16, sm: 20, md: 30 }}>
         {title}
       </Title>
 
@@ -42,8 +42,8 @@ function Products(props: ProductsPropsType) {
         align="start"
         slidesToScroll={slidesToScroll}
         dragFree
-        withIndicators
-        mt={30}
+        mt={{ base: 15, xs: 30 }}
+        styles={{ control: { display: 'none' } }}
       >
         {products.map((item: ProductType, index) => {
           return (
